@@ -77,11 +77,37 @@
                         <configuration>
                             <wsdlUrls>
                                 <wsdlUrl>https://xyp.gov.mn/meta-1.5.0/ws?WSDL</wsdlUrl>
+                            </wsdlUrls>
+                            <packageName>mn.gov.xyp.meta</packageName>
+                            <sourceDestDir>${project.basedir}/src/main/java/</sourceDestDir>
+                            <verbose>true</verbose>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>generate-sources</id>
+                        <goals>
+                            <goal>wsimport</goal>
+                        </goals>
+                        <configuration>
+                            <wsdlUrls>
                                 <wsdlUrl>https://xyp.gov.mn/citizen-1.5.0/ws?WSDL</wsdlUrl>
+                            </wsdlUrls>
+                            <packageName>mn.gov.xyp.citizen</packageName>
+                            <sourceDestDir>${project.basedir}/src/main/java/</sourceDestDir>
+                            <verbose>true</verbose>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>generate-sources</id>
+                        <goals>
+                            <goal>wsimport</goal>
+                        </goals>
+                        <configuration>
+                            <wsdlUrls>
                                 <wsdlUrl>https://xyp.gov.mn/insurance-1.5.0/ws?WSDL</wsdlUrl>
                             </wsdlUrls>
-                            <packageName>mn.gov.xyp</packageName>
-                            <sourceDestDir>${project.basedir}/src/main/java/mn/gov/xyp</sourceDestDir>
+                            <packageName>mn.gov.xyp.insurance</packageName>
+                            <sourceDestDir>${project.basedir}/src/main/java/</sourceDestDir>
                             <verbose>true</verbose>
                         </configuration>
                     </execution>
