@@ -81,6 +81,7 @@
                             <packageName>mn.gov.xyp.meta</packageName>
                             <sourceDestDir>${project.basedir}/src/main/java/</sourceDestDir>
                             <verbose>true</verbose>
+                            <keep>true</keep>
                         </configuration>
                     </execution>
                     <execution>
@@ -95,6 +96,7 @@
                             <packageName>mn.gov.xyp.citizen</packageName>
                             <sourceDestDir>${project.basedir}/src/main/java/</sourceDestDir>
                             <verbose>true</verbose>
+                            <keep>true</keep>
                         </configuration>
                     </execution>
                     <execution>
@@ -109,6 +111,7 @@
                             <packageName>mn.gov.xyp.insurance</packageName>
                             <sourceDestDir>${project.basedir}/src/main/java/</sourceDestDir>
                             <verbose>true</verbose>
+                            <keep>true</keep>
                         </configuration>
                     </execution>
                 </executions>
