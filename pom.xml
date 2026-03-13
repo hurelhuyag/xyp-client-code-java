@@ -70,7 +70,7 @@
                 <version>2.6</version>
                 <executions>
                     <execution>
-                        <id>generate-sources</id>
+                        <id>generate-xyp-meta</id>
                         <goals>
                             <goal>wsimport</goal>
                         </goals>
@@ -85,7 +85,7 @@
                         </configuration>
                     </execution>
                     <execution>
-                        <id>generate-sources</id>
+                        <id>generate-xyp-citizen</id>
                         <goals>
                             <goal>wsimport</goal>
                         </goals>
@@ -100,7 +100,7 @@
                         </configuration>
                     </execution>
                     <execution>
-                        <id>generate-sources</id>
+                        <id>generate-xyp-insurance</id>
                         <goals>
                             <goal>wsimport</goal>
                         </goals>
