@@ -4,11 +4,11 @@ package mn.gov.xyp.meta;
 import java.net.MalformedURLException;
 import java.net.URL;
 import javax.xml.namespace.QName;
-import javax.xml.ws.Service;
-import javax.xml.ws.WebEndpoint;
-import javax.xml.ws.WebServiceClient;
-import javax.xml.ws.WebServiceException;
-import javax.xml.ws.WebServiceFeature;
+import jakarta.xml.ws.Service;
+import jakarta.xml.ws.WebEndpoint;
+import jakarta.xml.ws.WebServiceClient;
+import jakarta.xml.ws.WebServiceException;
+import jakarta.xml.ws.WebServiceFeature;
 
 
 /**
@@ -30,7 +30,7 @@ public class MetaServiceService
         URL url = null;
         WebServiceException e = null;
         try {
-            url = new URL("file:/E:/xyp-client-code-java/src/WSDL/meta.xml");
+            url = new URL("file:/C:/Users/khurelchuluun.kh/IdeaProjects/xyp-client-code-java/src/WSDL/meta.xml");
         } catch (MalformedURLException ex) {
             e = new WebServiceException(ex);
         }
@@ -75,7 +75,7 @@ public class MetaServiceService
     /**
      * 
      * @param features
-     *     A list of {@link javax.xml.ws.WebServiceFeature} to configure on the proxy.  Supported features not in the <code>features</code> parameter will have their default values.
+     *     A list of {@link jakarta.xml.ws.WebServiceFeature} to configure on the proxy.  Supported features not in the <code>features</code> parameter will have their default values.
      * @return
      *     returns MetaService
      */
