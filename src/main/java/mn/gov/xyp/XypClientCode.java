@@ -2,8 +2,8 @@ package mn.gov.xyp;
 
 import mn.gov.xyp.citizen.*;
 
-import javax.xml.ws.BindingProvider;
-import javax.xml.ws.handler.MessageContext;
+import jakarta.xml.ws.BindingProvider;
+import jakarta.xml.ws.handler.MessageContext;
 import java.util.*;
 
 public class XypClientCode {

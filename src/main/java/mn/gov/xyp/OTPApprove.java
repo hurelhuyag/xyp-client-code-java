@@ -6,8 +6,19 @@ import mn.gov.xyp.meta.MetaService;
 import mn.gov.xyp.meta.MetaServiceService;
 import mn.gov.xyp.meta.RegisterOTPRequest;
 
-import javax.xml.ws.BindingProvider;
-import javax.xml.ws.handler.MessageContext;
+import jakarta.xml.ws.BindingProvider;
+import jakarta.xml.ws.handler.MessageContext;
+
+import javax.net.ssl.*;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.security.KeyManagementException;
+import java.security.KeyStore;
+import java.security.KeyStoreException;
+import java.security.NoSuchAlgorithmException;
+import java.security.cert.CertificateException;
 import java.util.*;
 
 /**
