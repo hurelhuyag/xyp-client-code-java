@@ -10,9 +10,9 @@
     <description>demo xyp client code java</description>
 
     <properties>
-        <maven.compiler.source>11</maven.compiler.source>
-        <maven.compiler.target>11</maven.compiler.target>
-        <java.version>11</java.version>
+        <maven.compiler.source>21</maven.compiler.source>
+        <maven.compiler.target>21</maven.compiler.target>
+        <java.version>21</java.version>
     </properties>
 
     <dependencies>
@@ -128,6 +128,24 @@
                                         <wsdlUrl>https://xyp.gov.mn/insurance-1.5.0/ws?WSDL</wsdlUrl>
                                     </wsdlUrls>
                                     <packageName>mn.gov.xyp.insurance</packageName>
+                                    <xjcArgs>
+                                        <xjcArg>-target</xjcArg><xjcArg>jakarta</xjcArg>
+                                    </xjcArgs>
+                                    <sourceDestDir>${project.basedir}/src/main/java/</sourceDestDir>
+                                    <verbose>true</verbose>
+                                    <keep>true</keep>
+                                </configuration>
+                            </execution>
+                            <execution>
+                                <id>generate-xyp-transport</id>
+                                <goals>
+                                    <goal>wsimport</goal>
+                                </goals>
+                                <configuration>
+                                    <wsdlUrls>
+                                        <wsdlUrl>https://xyp.gov.mn/transport-1.5.0/ws?WSDL</wsdlUrl>
+                                    </wsdlUrls>
+                                    <packageName>mn.gov.xyp.transport</packageName>
                                     <xjcArgs>
                                         <xjcArg>-target</xjcArg><xjcArg>jakarta</xjcArg>
                                     </xjcArgs>
