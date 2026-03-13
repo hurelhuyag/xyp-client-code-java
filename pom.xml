@@ -82,7 +82,7 @@
                         <artifactId>jaxws-maven-plugin</artifactId>
                         <version>2.6</version>
                         <executions>
-                            <execution>
+				<!-- <execution>
                                 <id>generate-xyp-meta</id>
                                 <goals>
                                     <goal>wsimport</goal>
@@ -135,7 +135,7 @@
                                     <verbose>true</verbose>
                                     <keep>true</keep>
                                 </configuration>
-                            </execution>
+				</execution>-->
                             <execution>
                                 <id>generate-xyp-transport</id>
                                 <goals>
@@ -146,9 +146,6 @@
                                         <wsdlUrl>https://xyp.gov.mn/transport-1.5.0/ws?WSDL</wsdlUrl>
                                     </wsdlUrls>
                                     <packageName>mn.gov.xyp.transport</packageName>
-                                    <xjcArgs>
-                                        <xjcArg>-target</xjcArg><xjcArg>jakarta</xjcArg>
-                                    </xjcArgs>
                                     <sourceDestDir>${project.basedir}/src/main/java/</sourceDestDir>
                                     <verbose>true</verbose>
                                     <keep>true</keep>

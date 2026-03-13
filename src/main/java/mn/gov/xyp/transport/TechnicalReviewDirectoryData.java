@@ -1,0 +1,133 @@
+
+package mn.gov.xyp.transport;
+
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlType;
+
+
+/**
+ * <p>Java class for technicalReviewDirectoryData complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="technicalReviewDirectoryData"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="countryNumber" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="date" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="inspName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="inspResult" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
+ * </pre>
+ * 
+ * 
+ */
+@XmlAccessorType(XmlAccessType.FIELD)
+@XmlType(name = "technicalReviewDirectoryData", propOrder = {
+    "countryNumber",
+    "date",
+    "inspName",
+    "inspResult"
+})
+public class TechnicalReviewDirectoryData {
+
+    protected String countryNumber;
+    protected String date;
+    protected String inspName;
+    protected int inspResult;
+
+    /**
+     * Gets the value of the countryNumber property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getCountryNumber() {
+        return countryNumber;
+    }
+
+    /**
+     * Sets the value of the countryNumber property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setCountryNumber(String value) {
+        this.countryNumber = value;
+    }
+
+    /**
+     * Gets the value of the date property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getDate() {
+        return date;
+    }
+
+    /**
+     * Sets the value of the date property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setDate(String value) {
+        this.date = value;
+    }
+
+    /**
+     * Gets the value of the inspName property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getInspName() {
+        return inspName;
+    }
+
+    /**
+     * Sets the value of the inspName property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setInspName(String value) {
+        this.inspName = value;
+    }
+
+    /**
+     * Gets the value of the inspResult property.
+     * 
+     */
+    public int getInspResult() {
+        return inspResult;
+    }
+
+    /**
+     * Sets the value of the inspResult property.
+     * 
+     */
+    public void setInspResult(int value) {
+        this.inspResult = value;
+    }
+
+}
