@@ -1,10 +1,10 @@
 
 package mn.gov.xyp.citizen;
 
-import jakarta.xml.bind.annotation.XmlAccessType;
-import jakarta.xml.bind.annotation.XmlAccessorType;
-import jakarta.xml.bind.annotation.XmlSeeAlso;
-import jakarta.xml.bind.annotation.XmlType;
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlSeeAlso;
+import javax.xml.bind.annotation.XmlType;
 
 
 /**
@@ -13,15 +13,15 @@ import jakarta.xml.bind.annotation.XmlType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="serviceRequest">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="auth" type="{http://citizen.xyp.gov.mn/}authorizationData" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="serviceRequest"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="auth" type="{http://citizen.xyp.gov.mn/}authorizationData" minOccurs="0"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -31,51 +31,101 @@ import jakarta.xml.bind.annotation.XmlType;
     "auth"
 })
 @XmlSeeAlso({
-    ServiceAddressStreetInfoRequestData.class,
-    InsertNotaryRequestData.class,
-    CheckIdCardServiceRequestData.class,
-    GraduateInfoByYearRequestData.class,
-    ServiceChildrenInfoRequestData.class,
-    ServiceGenerateRegisterNumberRequestData.class,
+    GetPassportInfoRequestData.class,
     CitizenRequestData.class,
-    CitizenGraduateSchoolRequestData.class,
-    CitizenStatisticRequestData.class,
-    CitizenDenationalizationRequestData.class,
-    ServiceBagKhorooInfoRequestData.class,
-    ServiceInsertForeignCitizenInHotelRequestData.class,
-    GetDictionaryRequestData.class,
+    ForeignPassportsListRequestData.class,
     CitizenEducationRequestData.class,
-    Covid19VaccineCertificateRequest.class,
-    ChildRequestData.class,
-    GetPassportIssuedRequestData.class,
-    ServiceCitizenBirthInfoRequestData.class,
-    ServiceCheckCitizenAddressInfoRequestData.class,
-    GetTegCivilInfoRequestData.class,
-    BirthInfoParentRegnumRequestData.class,
-    ChildrenInfoByMotherRequestData.class,
-    ServicePassortInfoRequestData.class,
-    ServiceBorderPassInfoRequestData.class,
-    ChildrenBasicInfoRequest.class,
-    CitizenFoulDataRequest.class,
+    CitizenStatisticRequestData.class,
+    GetIDCardInfoRequestData.class,
     ServiceInsertBirthInfoRequestData.class,
-    ServiceAddressApartmentInfoRequestData.class,
-    CitizenInfoLogByDateRequestData.class,
-    CitizenCriminalLiabilityEngRequestData.class,
-    Covid19InternationalCertRequestData.class,
-    CitizenCriminalLiabilityRequestData.class,
-    ServiceSoumDistrictInfoRequestData.class,
-    ServiceCheckCitizenRegnumRequestData.class,
-    InsertCitizenArchivesOrderRequestData.class,
-    CovidPCRRequestData.class,
+    BorderBanRequestData.class,
+    GetTegCivilInfoRequestData.class,
     ServiceCitizenBorderPassRequestData.class,
-    ServiceCitizenDeceaseInfoRequestData.class,
-    CheckCitizenInfoRequestData.class,
-    CitizenReleasedInfoRequestData.class,
-    GetFireArmRequestData.class,
+    CitizenGraduateSchoolRequestData.class,
+    GraduatedVocationalStudentInfoRequestData.class,
+    ServiceGenerateRegisterNumberRequestData.class,
+    GetDictionaryRequestData.class,
+    GetNameAndSurnameChangedInfoRequestData.class,
+    InsertCitizenArchivesOrderRequestData.class,
+    GetElectionLocationRequestData.class,
+    CivilInfoAtBurtgelmnRequestData.class,
+    GetAwardInformationForMotherAndChildRequestData.class,
     ServiceCitizenLookUpAddressRequestData.class,
+    CitizenFoulDataRequest.class,
+    GetPassportPhotoRequestData.class,
+    GetOrganizationWhereCitizenWorksInfoRequestData.class,
+    ServiceInsertForeignCitizenInHotelRequestData.class,
+    CitizenListOfSubmitAnApplicationRequestData.class,
+    ServiceCitizenDeceaseInfoRequestData.class,
+    CivilServiceEmployeeInfoRequestData.class,
     PassportInvalidInfoRequestData.class,
+    CovidPCRRequestData.class,
+    ChildrenInfoByParentRequestData.class,
+    ExtendTermOfGrantedNameUpdateRequestData.class,
+    GetParentInfoRequestData.class,
+    ActiveVocationalStudentInfoRequestData.class,
+    PassportInfoForUseByPoliceRequestData.class,
+    GetAdoptionInfoRequestData.class,
+    CitizenCriminalLiabilityRequestData.class,
+    ServiceAddressStreetInfoRequestData.class,
+    GetChildrenInfoUnderAgeOf16RequestData.class,
+    GraduateInfoByYearRequestData.class,
+    GetFireArmRequestData.class,
+    CheckIdCardServiceRequestData.class,
+    GetTopicsRequestData.class,
+    GetMotherAndChildBirthInfoRequestData.class,
+    CitizenDenationalizationRequestData.class,
+    WeaponBorderAuthorizationRequestData.class,
+    ChildRequestData.class,
+    ServiceSoumDistrictInfoRequestData.class,
+    GetPassportInfoDetailRequestData.class,
+    ServiceCheckCitizenAddressInfoRequestData.class,
+    LegalEntityNameValidityServiceRequestData.class,
+    GetPassportIssuedRequestData.class,
+    GetDissolvedLegalEntityInfoRequestData.class,
+    GetDeceaseInfoRequestData.class,
+    ListOfDeregisteredCitizensRequestData.class,
+    Covid19InternationalCertRequestData.class,
     ServiceCitizenLookUpInfoRequestData.class,
-    RegistrationBasicRequest.class
+    CitizenCriminalLiabilityEngRequestData.class,
+    GetMigrationInfoRequestData.class,
+    ServiceCheckCitizenRegnumRequestData.class,
+    ServiceChildrenInfoRequestData.class,
+    PassportValidityCheckerRequestData.class,
+    BirthInfoParentRegnumRequestData.class,
+    GetMarriageInfoRequestData.class,
+    CitizenNewDiplomaInfoRequestData.class,
+    ExtendTermOfGrantedNameRequsetData.class,
+    GetTopicScopeRequestData.class,
+    ServiceCitizenBirthInfoRequestData.class,
+    CitizenshipRenunciationRecordRequestData.class,
+    ListOfRegisteredCitizensRequestData.class,
+    GetCitizenBelowSubsistenceLevelInfoRequestData.class,
+    SvcMarriageRestoresRequestData.class,
+    GenProfTrainingPackageCertRequestData.class,
+    InsertNotaryRequestData.class,
+    CitizenInfoLogByDateRequestData.class,
+    CitizenArrivedLimitedDateRequestData.class,
+    ServiceBagKhorooInfoRequestData.class,
+    ServiceBorderPassInfoRequestData.class,
+    ConformityCertificateListRequestData.class,
+    GetFiliationInfoRequestData.class,
+    GetDivorcedInfoRequestData.class,
+    AffiliationRegistrationInfoRequestData.class,
+    GetStampReferenceRequestData.class,
+    ChildrenInfoByMotherRequestData.class,
+    ListOfCivilTitlesRequestData.class,
+    UdRegnumForeignCitizenInfoRequest.class,
+    ServicePassortInfoRequestData.class,
+    ConformityCertificateDetailServiceRequestData.class,
+    RegistrationBasicRequest.class,
+    GetRegnumChangedInfoRequestData.class,
+    ServiceAddressApartmentInfoRequestData.class,
+    CitizenSubmitAnApplicationRequestData.class,
+    CitizenReleasedInfoRequestData.class,
+    Covid19VaccineCertificateRequest.class,
+    CheckCitizenInfoRequestData.class,
+    InternalTroopsDescriptionRequestData.class
 })
 public class ServiceRequest {
 

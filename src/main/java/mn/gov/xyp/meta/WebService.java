@@ -3,11 +3,11 @@ package mn.gov.xyp.meta;
 
 import java.util.ArrayList;
 import java.util.List;
-import jakarta.xml.bind.annotation.XmlAccessType;
-import jakarta.xml.bind.annotation.XmlAccessorType;
-import jakarta.xml.bind.annotation.XmlElement;
-import jakarta.xml.bind.annotation.XmlSchemaType;
-import jakarta.xml.bind.annotation.XmlType;
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlSchemaType;
+import javax.xml.bind.annotation.XmlType;
 import javax.xml.datatype.XMLGregorianCalendar;
 
 
@@ -17,22 +17,25 @@ import javax.xml.datatype.XMLGregorianCalendar;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="webService">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="code" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="expireDate" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
- *         &lt;element name="id" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="operationDetail" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="operationName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="parameters" type="{http://www.w3.org/2001/XMLSchema}string" maxOccurs="unbounded" minOccurs="0"/>
- *         &lt;element name="sendNotification" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="wsdlEndpint" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="webService"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="code" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="expireDate" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+ *         &lt;element name="id" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="isFingerprint" type="{http://www.w3.org/2001/XMLSchema}boolean"/&gt;
+ *         &lt;element name="isOtp" type="{http://www.w3.org/2001/XMLSchema}boolean"/&gt;
+ *         &lt;element name="isSignature" type="{http://www.w3.org/2001/XMLSchema}boolean"/&gt;
+ *         &lt;element name="operationDetail" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="operationName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="parameters" type="{http://www.w3.org/2001/XMLSchema}string" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *         &lt;element name="sendNotification" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="wsdlEndpint" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -42,6 +45,9 @@ import javax.xml.datatype.XMLGregorianCalendar;
     "code",
     "expireDate",
     "id",
+    "isFingerprint",
+    "isOtp",
+    "isSignature",
     "operationDetail",
     "operationName",
     "parameters",
@@ -54,6 +60,9 @@ public class WebService {
     @XmlSchemaType(name = "dateTime")
     protected XMLGregorianCalendar expireDate;
     protected int id;
+    protected boolean isFingerprint;
+    protected boolean isOtp;
+    protected boolean isSignature;
     protected String operationDetail;
     protected String operationName;
     @XmlElement(nillable = true)
@@ -123,6 +132,54 @@ public class WebService {
      */
     public void setId(int value) {
         this.id = value;
+    }
+
+    /**
+     * Gets the value of the isFingerprint property.
+     * 
+     */
+    public boolean isIsFingerprint() {
+        return isFingerprint;
+    }
+
+    /**
+     * Sets the value of the isFingerprint property.
+     * 
+     */
+    public void setIsFingerprint(boolean value) {
+        this.isFingerprint = value;
+    }
+
+    /**
+     * Gets the value of the isOtp property.
+     * 
+     */
+    public boolean isIsOtp() {
+        return isOtp;
+    }
+
+    /**
+     * Sets the value of the isOtp property.
+     * 
+     */
+    public void setIsOtp(boolean value) {
+        this.isOtp = value;
+    }
+
+    /**
+     * Gets the value of the isSignature property.
+     * 
+     */
+    public boolean isIsSignature() {
+        return isSignature;
+    }
+
+    /**
+     * Sets the value of the isSignature property.
+     * 
+     */
+    public void setIsSignature(boolean value) {
+        this.isSignature = value;
     }
 
     /**

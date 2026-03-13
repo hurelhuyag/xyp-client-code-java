@@ -1,9 +1,9 @@
 
 package mn.gov.xyp.citizen;
 
-import jakarta.xml.bind.annotation.XmlAccessType;
-import jakarta.xml.bind.annotation.XmlAccessorType;
-import jakarta.xml.bind.annotation.XmlType;
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlType;
 
 
 /**
@@ -12,42 +12,42 @@ import jakarta.xml.bind.annotation.XmlType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="marriageRegisterdStatsDetailData">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="aimagCityName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="bachelorFemale" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="bachelorMale" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="baseFemale" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="baseMale" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="collegeFemale" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="collegeMale" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="divorceFemale" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="divorceMale" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="educationLevelFemale" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="educationLevelMale" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="elementaryCollegeFemale" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="elementaryCollegeMale" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="elementarySchoolFemale" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="elementarySchoolMale" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="highSchoolFemale" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="highSchoolMale" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="masterFemale" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="masterMale" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="noMarriageFemale" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="noMarriageMale" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="phdFemale" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="phdMale" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="soumDistrictName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="unEducationFemale" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="unEducationMale" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="widow" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="widower" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="marriageRegisterdStatsDetailData"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="aimagCityName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="bachelorFemale" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="bachelorMale" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="baseFemale" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="baseMale" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="collegeFemale" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="collegeMale" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="divorceFemale" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="divorceMale" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="educationLevelFemale" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="educationLevelMale" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="elementaryCollegeFemale" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="elementaryCollegeMale" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="elementarySchoolFemale" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="elementarySchoolMale" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="highSchoolFemale" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="highSchoolMale" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="masterFemale" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="masterMale" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="noMarriageFemale" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="noMarriageMale" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="phdFemale" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="phdMale" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="soumDistrictName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="unEducationFemale" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="unEducationMale" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="widow" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="widower" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 

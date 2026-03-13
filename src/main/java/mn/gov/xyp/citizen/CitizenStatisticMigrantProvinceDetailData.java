@@ -1,9 +1,9 @@
 
 package mn.gov.xyp.citizen;
 
-import jakarta.xml.bind.annotation.XmlAccessType;
-import jakarta.xml.bind.annotation.XmlAccessorType;
-import jakarta.xml.bind.annotation.XmlType;
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlType;
 
 
 /**
@@ -12,38 +12,38 @@ import jakarta.xml.bind.annotation.XmlType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="citizenStatisticMigrantProvinceDetailData">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="aimagCityName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="all" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="arhangai" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="bayanhongor" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="bayanulgii" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="bulgan" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="darhanuul" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="dornod" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="dornogobi" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="dundgobi" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="gobisumber" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="govialtai" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="khentii" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="khovd" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="khuvsgul" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="orhon" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="selenge" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="sukhbaatar" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="tuv" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="ulaanbaatar" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="umnugobi" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="uvs" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="uvurhangai" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="zavhan" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="citizenStatisticMigrantProvinceDetailData"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="aimagCityName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="all" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="arhangai" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="bayanhongor" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="bayanulgii" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="bulgan" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="darhanuul" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="dornod" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="dornogobi" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="dundgobi" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="gobisumber" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="govialtai" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="khentii" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="khovd" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="khuvsgul" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="orhon" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="selenge" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="sukhbaatar" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="tuv" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="ulaanbaatar" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="umnugobi" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="uvs" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="uvurhangai" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="zavhan" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 

@@ -1,0 +1,69 @@
+
+package mn.gov.xyp.insurance;
+
+import java.util.ArrayList;
+import java.util.List;
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlType;
+
+
+/**
+ * <p>Java class for getBankAccountsResponseData complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="getBankAccountsResponseData"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="list" type="{http://insurance.xyp.gov.mn/}getBankAccountsResponseDetailData" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
+ * </pre>
+ * 
+ * 
+ */
+@XmlAccessorType(XmlAccessType.FIELD)
+@XmlType(name = "getBankAccountsResponseData", propOrder = {
+    "list"
+})
+public class GetBankAccountsResponseData {
+
+    @XmlElement(nillable = true)
+    protected List<GetBankAccountsResponseDetailData> list;
+
+    /**
+     * Gets the value of the list property.
+     * 
+     * <p>
+     * This accessor method returns a reference to the live list,
+     * not a snapshot. Therefore any modification you make to the
+     * returned list will be present inside the JAXB object.
+     * This is why there is not a <CODE>set</CODE> method for the list property.
+     * 
+     * <p>
+     * For example, to add a new item, do as follows:
+     * <pre>
+     *    getList().add(newItem);
+     * </pre>
+     * 
+     * 
+     * <p>
+     * Objects of the following type(s) are allowed in the list
+     * {@link GetBankAccountsResponseDetailData }
+     * 
+     * 
+     */
+    public List<GetBankAccountsResponseDetailData> getList() {
+        if (list == null) {
+            list = new ArrayList<GetBankAccountsResponseDetailData>();
+        }
+        return this.list;
+    }
+
+}

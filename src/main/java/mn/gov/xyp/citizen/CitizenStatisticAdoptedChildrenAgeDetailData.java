@@ -1,10 +1,10 @@
 
 package mn.gov.xyp.citizen;
 
-import jakarta.xml.bind.annotation.XmlAccessType;
-import jakarta.xml.bind.annotation.XmlAccessorType;
-import jakarta.xml.bind.annotation.XmlElement;
-import jakarta.xml.bind.annotation.XmlType;
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlType;
 
 
 /**
@@ -13,31 +13,31 @@ import jakarta.xml.bind.annotation.XmlType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="citizenStatisticAdoptedChildrenAgeDetailData">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="age0to3All" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="age0to3Female" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="age0to3Male" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="age10PlusFemale" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="age10PlusMale" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="age10toPlusAll" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="age4to6All" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="age4to6Female" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="age4to6Male" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="age7to9All" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="age7to9Female" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="age7to9Male" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="ageFemale" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="ageMale" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="aimagCityName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="all" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="soumDistrictName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="citizenStatisticAdoptedChildrenAgeDetailData"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="age0to3All" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="age0to3Female" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="age0to3Male" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="age10PlusFemale" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="age10PlusMale" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="age10toPlusAll" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="age4to6All" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="age4to6Female" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="age4to6Male" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="age7to9All" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="age7to9Female" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="age7to9Male" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="ageFemale" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="ageMale" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="aimagCityName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="all" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="soumDistrictName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 

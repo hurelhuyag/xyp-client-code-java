@@ -1,9 +1,9 @@
 
 package mn.gov.xyp.citizen;
 
-import jakarta.xml.bind.annotation.XmlAccessType;
-import jakarta.xml.bind.annotation.XmlAccessorType;
-import jakarta.xml.bind.annotation.XmlType;
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlType;
 
 
 /**
@@ -12,20 +12,20 @@ import jakarta.xml.bind.annotation.XmlType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="checkCitizenAddressInfoData">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="valid" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
- *         &lt;element name="validAimagCity" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
- *         &lt;element name="validApartemnt" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
- *         &lt;element name="validBagKhoroo" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
- *         &lt;element name="validSoumDistrict" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
- *         &lt;element name="validStreet" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="checkCitizenAddressInfoData"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="valid" type="{http://www.w3.org/2001/XMLSchema}boolean"/&gt;
+ *         &lt;element name="validAimagCity" type="{http://www.w3.org/2001/XMLSchema}boolean"/&gt;
+ *         &lt;element name="validApartemnt" type="{http://www.w3.org/2001/XMLSchema}boolean"/&gt;
+ *         &lt;element name="validBagKhoroo" type="{http://www.w3.org/2001/XMLSchema}boolean"/&gt;
+ *         &lt;element name="validSoumDistrict" type="{http://www.w3.org/2001/XMLSchema}boolean"/&gt;
+ *         &lt;element name="validStreet" type="{http://www.w3.org/2001/XMLSchema}boolean"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 

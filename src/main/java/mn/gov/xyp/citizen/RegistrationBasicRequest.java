@@ -1,10 +1,10 @@
 
 package mn.gov.xyp.citizen;
 
-import jakarta.xml.bind.annotation.XmlAccessType;
-import jakarta.xml.bind.annotation.XmlAccessorType;
-import jakarta.xml.bind.annotation.XmlSeeAlso;
-import jakarta.xml.bind.annotation.XmlType;
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlSeeAlso;
+import javax.xml.bind.annotation.XmlType;
 
 
 /**
@@ -13,19 +13,19 @@ import jakarta.xml.bind.annotation.XmlType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="registrationBasicRequest">
- *   &lt;complexContent>
- *     &lt;extension base="{http://citizen.xyp.gov.mn/}serviceRequest">
- *       &lt;sequence>
- *         &lt;element name="orgCode" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="orgName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="orgPassword" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="orgToken" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="serviceCode" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/extension>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="registrationBasicRequest"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;extension base="{http://citizen.xyp.gov.mn/}serviceRequest"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="orgCode" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="orgName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="orgPassword" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="orgToken" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="serviceCode" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/extension&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -39,11 +39,12 @@ import jakarta.xml.bind.annotation.XmlType;
     "serviceCode"
 })
 @XmlSeeAlso({
-    RegisteredChildrenRequestData.class,
     CitizenDetailRequestData.class,
-    DeceaseListRequestData.class,
     CheckTwinInfoRequestsData.class,
-    AllChildrenInfoByMotherRequestData.class
+    RegisteredChildrenRequestData.class,
+    AllChildrenInfoByMotherRequestData.class,
+    DeceaseListRequestData.class,
+    CitizenCivilIdRequestData.class
 })
 public class RegistrationBasicRequest
     extends ServiceRequest

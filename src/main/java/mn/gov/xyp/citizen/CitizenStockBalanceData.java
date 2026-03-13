@@ -3,10 +3,10 @@ package mn.gov.xyp.citizen;
 
 import java.util.ArrayList;
 import java.util.List;
-import jakarta.xml.bind.annotation.XmlAccessType;
-import jakarta.xml.bind.annotation.XmlAccessorType;
-import jakarta.xml.bind.annotation.XmlElement;
-import jakarta.xml.bind.annotation.XmlType;
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlType;
 
 
 /**
@@ -15,21 +15,22 @@ import jakarta.xml.bind.annotation.XmlType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="citizenStockBalanceData">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="firstName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="info" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="lastName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="listDataHishigt" type="{http://citizen.xyp.gov.mn/}stockBalanceHishigt" maxOccurs="unbounded" minOccurs="0"/>
- *         &lt;element name="listDataSain" type="{http://citizen.xyp.gov.mn/}stockBalanceHishigt" maxOccurs="unbounded" minOccurs="0"/>
- *         &lt;element name="listDataShares" type="{http://citizen.xyp.gov.mn/}stockBalanceShare" maxOccurs="unbounded" minOccurs="0"/>
- *         &lt;element name="regnum" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="citizenStockBalanceData"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="firstName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="info" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="lastName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="listDataHishigt" type="{http://citizen.xyp.gov.mn/}stockBalanceHishigt" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *         &lt;element name="listDataSain" type="{http://citizen.xyp.gov.mn/}stockBalanceHishigt" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *         &lt;element name="listDataShares" type="{http://citizen.xyp.gov.mn/}stockBalanceShare" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *         &lt;element name="regnum" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="status" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -42,7 +43,8 @@ import jakarta.xml.bind.annotation.XmlType;
     "listDataHishigt",
     "listDataSain",
     "listDataShares",
-    "regnum"
+    "regnum",
+    "status"
 })
 public class CitizenStockBalanceData {
 
@@ -56,6 +58,7 @@ public class CitizenStockBalanceData {
     @XmlElement(nillable = true)
     protected List<StockBalanceShare> listDataShares;
     protected String regnum;
+    protected int status;
 
     /**
      * Gets the value of the firstName property.
@@ -238,6 +241,22 @@ public class CitizenStockBalanceData {
      */
     public void setRegnum(String value) {
         this.regnum = value;
+    }
+
+    /**
+     * Gets the value of the status property.
+     * 
+     */
+    public int getStatus() {
+        return status;
+    }
+
+    /**
+     * Sets the value of the status property.
+     * 
+     */
+    public void setStatus(int value) {
+        this.status = value;
     }
 
 }

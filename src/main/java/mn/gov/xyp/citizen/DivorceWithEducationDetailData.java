@@ -1,10 +1,10 @@
 
 package mn.gov.xyp.citizen;
 
-import jakarta.xml.bind.annotation.XmlAccessType;
-import jakarta.xml.bind.annotation.XmlAccessorType;
-import jakarta.xml.bind.annotation.XmlElement;
-import jakarta.xml.bind.annotation.XmlType;
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlType;
 
 
 /**
@@ -13,43 +13,43 @@ import jakarta.xml.bind.annotation.XmlType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="divorceWithEducationDetailData">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="age20To24Female" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="aimagCityName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="bachelorFemale" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="bachelorMale" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="baseFemale" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="baseMale" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="collegeFemale" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="collegeMale" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="educationLevelFemale" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="educationLevelMale" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="elementaryCollegeFemale" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="elementaryCollegeMale" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="elementaryFemale" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="elementaryMale" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="familyYear" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="forYear" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="highFemale" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="highMale" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="masterFemale" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="masterMale" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="phdFemale" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="phdMale" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="soumDistrict" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="year10To14" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="year15To19" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="year1To3" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="year20plus" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="year4To6" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="year7To9" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="divorceWithEducationDetailData"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="age20To24Female" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="aimagCityName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="bachelorFemale" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="bachelorMale" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="baseFemale" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="baseMale" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="collegeFemale" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="collegeMale" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="educationLevelFemale" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="educationLevelMale" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="elementaryCollegeFemale" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="elementaryCollegeMale" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="elementaryFemale" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="elementaryMale" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="familyYear" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="forYear" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="highFemale" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="highMale" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="masterFemale" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="masterMale" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="phdFemale" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="phdMale" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="soumDistrict" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="year10To14" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="year15To19" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="year1To3" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="year20plus" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="year4To6" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="year7To9" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 

@@ -1,9 +1,9 @@
 
 package mn.gov.xyp.citizen;
 
-import jakarta.xml.bind.annotation.XmlAccessType;
-import jakarta.xml.bind.annotation.XmlAccessorType;
-import jakarta.xml.bind.annotation.XmlType;
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlType;
 
 
 /**
@@ -12,32 +12,32 @@ import jakarta.xml.bind.annotation.XmlType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="citizenStatisticMigrantReasonDetailData">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="all" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="female" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="graduateFemale" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="graduateMale" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="guardianFemale" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="guardianMale" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="improveLivingConditionFemale" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="improveLivingConditionMale" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="male" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="name" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="otherFemale" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="otherMale" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="studyFemale" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="studyMale" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="workAppointmentFemale" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="workAppointmentMale" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="workProfessionallyFemale" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="workProfessionallyMale" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="citizenStatisticMigrantReasonDetailData"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="all" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="female" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="graduateFemale" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="graduateMale" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="guardianFemale" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="guardianMale" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="improveLivingConditionFemale" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="improveLivingConditionMale" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="male" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="name" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="otherFemale" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="otherMale" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="studyFemale" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="studyMale" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="workAppointmentFemale" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="workAppointmentMale" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="workProfessionallyFemale" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="workProfessionallyMale" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 

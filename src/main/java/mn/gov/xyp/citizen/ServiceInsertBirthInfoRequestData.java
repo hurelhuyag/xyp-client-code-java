@@ -1,10 +1,10 @@
 
 package mn.gov.xyp.citizen;
 
-import jakarta.xml.bind.annotation.XmlAccessType;
-import jakarta.xml.bind.annotation.XmlAccessorType;
-import jakarta.xml.bind.annotation.XmlSchemaType;
-import jakarta.xml.bind.annotation.XmlType;
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlSchemaType;
+import javax.xml.bind.annotation.XmlType;
 import javax.xml.datatype.XMLGregorianCalendar;
 
 
@@ -14,42 +14,42 @@ import javax.xml.datatype.XMLGregorianCalendar;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="serviceInsertBirthInfoRequestData">
- *   &lt;complexContent>
- *     &lt;extension base="{http://citizen.xyp.gov.mn/}serviceRequest">
- *       &lt;sequence>
- *         &lt;element name="birthAimagCityCode" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="birthDate" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
- *         &lt;element name="birthHeadCircle" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="birthHeight" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="birthPlaceCode" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="birthPlaceName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="birthShoulderCircle" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="birthSoumDistrictCode" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="birthTime" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="birthType" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="birthWeeks" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="birthWeight" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="citizenType" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="countryName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="createdUser" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="isAlive" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="isTwin" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="motherAimagCityCode" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="motherAimagCityName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="motherCivilId" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="motherFirstName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="motherFullAddress" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="motherLastName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="motherRegnum" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="motherSoumDistrictCode" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="motherSoumDistrictName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="regnum" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="sexCode" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *       &lt;/sequence>
- *     &lt;/extension>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="serviceInsertBirthInfoRequestData"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;extension base="{http://citizen.xyp.gov.mn/}serviceRequest"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="birthAimagCityCode" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="birthDate" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+ *         &lt;element name="birthHeadCircle" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="birthHeight" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="birthPlaceCode" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="birthPlaceName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="birthShoulderCircle" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="birthSoumDistrictCode" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="birthTime" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="birthType" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="birthWeeks" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="birthWeight" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="citizenType" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="countryName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="createdUser" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="isAlive" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="isTwin" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="motherAimagCityCode" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="motherAimagCityName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="motherCivilId" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="motherFirstName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="motherFullAddress" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="motherLastName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="motherRegnum" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="motherSoumDistrictCode" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="motherSoumDistrictName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="regnum" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="sexCode" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/extension&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 

@@ -1,9 +1,9 @@
 
 package mn.gov.xyp.citizen;
 
-import jakarta.xml.bind.annotation.XmlAccessType;
-import jakarta.xml.bind.annotation.XmlAccessorType;
-import jakarta.xml.bind.annotation.XmlType;
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlType;
 
 
 /**
@@ -12,32 +12,32 @@ import jakarta.xml.bind.annotation.XmlType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="citizenStatisticAdoptedChildrenDetailData">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="aimagCityName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="cooperativeFemale" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="cooperativeMale" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="employerFemale" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="employerMale" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="houseHoldFemale" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="houseHoldMale" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="labourFemale" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="labourMale" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="otherFemale" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="otherMale" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="privateFemale" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="privateMale" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="salaryFemale" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="salarymale" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="soumDistrictName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="unemployedFemale" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="unemployedMale" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="citizenStatisticAdoptedChildrenDetailData"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="aimagCityName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="cooperativeFemale" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="cooperativeMale" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="employerFemale" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="employerMale" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="houseHoldFemale" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="houseHoldMale" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="labourFemale" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="labourMale" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="otherFemale" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="otherMale" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="privateFemale" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="privateMale" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="salaryFemale" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="salarymale" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="soumDistrictName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="unemployedFemale" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="unemployedMale" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 

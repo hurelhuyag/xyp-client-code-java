@@ -1,10 +1,10 @@
 
 package mn.gov.xyp.citizen;
 
-import jakarta.xml.bind.annotation.XmlAccessType;
-import jakarta.xml.bind.annotation.XmlAccessorType;
-import jakarta.xml.bind.annotation.XmlElement;
-import jakarta.xml.bind.annotation.XmlType;
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlType;
 
 
 /**
@@ -13,44 +13,44 @@ import jakarta.xml.bind.annotation.XmlType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="citizenStatisticRegistredMigrantDetailData">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="age0to4female" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="age0to4male" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="age10to14female" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="age10to14male" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="age15to19female" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="age15to19male" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="age20to24female" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="age20to24male" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="age25to29female" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="age25to29male" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="age30to34female" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="age30to34male" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="age35to39female" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="age35to39male" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="age40to44female" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="age40to44male" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="age45to49female" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="age45to49male" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="age50to54female" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="age50to54male" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="age55toOldFemale" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="age55toOldMale" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="age5to9female" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="age5to9male" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="aimagCityName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="all" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="female" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="male" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="otherFemale" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="soumDistrictName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="citizenStatisticRegistredMigrantDetailData"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="age0to4female" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="age0to4male" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="age10to14female" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="age10to14male" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="age15to19female" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="age15to19male" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="age20to24female" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="age20to24male" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="age25to29female" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="age25to29male" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="age30to34female" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="age30to34male" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="age35to39female" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="age35to39male" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="age40to44female" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="age40to44male" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="age45to49female" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="age45to49male" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="age50to54female" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="age50to54male" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="age55toOldFemale" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="age55toOldMale" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="age5to9female" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="age5to9male" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="aimagCityName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="all" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="female" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="male" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="otherFemale" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="soumDistrictName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 

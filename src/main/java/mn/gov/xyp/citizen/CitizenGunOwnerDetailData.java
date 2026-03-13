@@ -1,9 +1,9 @@
 
 package mn.gov.xyp.citizen;
 
-import jakarta.xml.bind.annotation.XmlAccessType;
-import jakarta.xml.bind.annotation.XmlAccessorType;
-import jakarta.xml.bind.annotation.XmlType;
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlType;
 
 
 /**
@@ -12,41 +12,58 @@ import jakarta.xml.bind.annotation.XmlType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="citizenGunOwnerDetailData">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="certificateNum" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="coOwner" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="devitionUnitName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="districtName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="firstname" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="gunBarrel" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="gunLockNum" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="gunName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="isCitizen" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="isCoOwner" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="isGun" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="lastname" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="mark" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="ownerType" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="provinceName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="regnum" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="undified" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="citizenGunOwnerDetailData"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="bnoId" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="certificateNum" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="coOwner" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="coOwnerName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="countedDate" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="countryName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="createdDate" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="departmentName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="devitionUnitName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="districtName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="factoryUsage" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="firstname" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="gunBarrel" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="gunLockNum" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="gunName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="isCitizen" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="isCoOwner" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="isGun" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="kalibr" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="kalibrCount" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="lastname" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="mark" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="ownerType" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="phoneNumber" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="provinceName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="regnum" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="undified" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "citizenGunOwnerDetailData", propOrder = {
+    "bnoId",
     "certificateNum",
     "coOwner",
+    "coOwnerName",
+    "countedDate",
+    "countryName",
+    "createdDate",
+    "departmentName",
     "devitionUnitName",
     "districtName",
+    "factoryUsage",
     "firstname",
     "gunBarrel",
     "gunLockNum",
@@ -54,19 +71,29 @@ import jakarta.xml.bind.annotation.XmlType;
     "isCitizen",
     "isCoOwner",
     "isGun",
+    "kalibr",
+    "kalibrCount",
     "lastname",
     "mark",
     "ownerType",
+    "phoneNumber",
     "provinceName",
     "regnum",
     "undified"
 })
 public class CitizenGunOwnerDetailData {
 
+    protected String bnoId;
     protected String certificateNum;
     protected String coOwner;
+    protected String coOwnerName;
+    protected String countedDate;
+    protected String countryName;
+    protected String createdDate;
+    protected String departmentName;
     protected String devitionUnitName;
     protected String districtName;
+    protected String factoryUsage;
     protected String firstname;
     protected String gunBarrel;
     protected String gunLockNum;
@@ -74,12 +101,39 @@ public class CitizenGunOwnerDetailData {
     protected String isCitizen;
     protected String isCoOwner;
     protected String isGun;
+    protected String kalibr;
+    protected String kalibrCount;
     protected String lastname;
     protected String mark;
     protected String ownerType;
+    protected String phoneNumber;
     protected String provinceName;
     protected String regnum;
     protected String undified;
+
+    /**
+     * Gets the value of the bnoId property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getBnoId() {
+        return bnoId;
+    }
+
+    /**
+     * Sets the value of the bnoId property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setBnoId(String value) {
+        this.bnoId = value;
+    }
 
     /**
      * Gets the value of the certificateNum property.
@@ -130,6 +184,126 @@ public class CitizenGunOwnerDetailData {
     }
 
     /**
+     * Gets the value of the coOwnerName property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getCoOwnerName() {
+        return coOwnerName;
+    }
+
+    /**
+     * Sets the value of the coOwnerName property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setCoOwnerName(String value) {
+        this.coOwnerName = value;
+    }
+
+    /**
+     * Gets the value of the countedDate property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getCountedDate() {
+        return countedDate;
+    }
+
+    /**
+     * Sets the value of the countedDate property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setCountedDate(String value) {
+        this.countedDate = value;
+    }
+
+    /**
+     * Gets the value of the countryName property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getCountryName() {
+        return countryName;
+    }
+
+    /**
+     * Sets the value of the countryName property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setCountryName(String value) {
+        this.countryName = value;
+    }
+
+    /**
+     * Gets the value of the createdDate property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getCreatedDate() {
+        return createdDate;
+    }
+
+    /**
+     * Sets the value of the createdDate property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setCreatedDate(String value) {
+        this.createdDate = value;
+    }
+
+    /**
+     * Gets the value of the departmentName property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getDepartmentName() {
+        return departmentName;
+    }
+
+    /**
+     * Sets the value of the departmentName property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setDepartmentName(String value) {
+        this.departmentName = value;
+    }
+
+    /**
      * Gets the value of the devitionUnitName property.
      * 
      * @return
@@ -175,6 +349,30 @@ public class CitizenGunOwnerDetailData {
      */
     public void setDistrictName(String value) {
         this.districtName = value;
+    }
+
+    /**
+     * Gets the value of the factoryUsage property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getFactoryUsage() {
+        return factoryUsage;
+    }
+
+    /**
+     * Sets the value of the factoryUsage property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setFactoryUsage(String value) {
+        this.factoryUsage = value;
     }
 
     /**
@@ -346,6 +544,54 @@ public class CitizenGunOwnerDetailData {
     }
 
     /**
+     * Gets the value of the kalibr property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getKalibr() {
+        return kalibr;
+    }
+
+    /**
+     * Sets the value of the kalibr property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setKalibr(String value) {
+        this.kalibr = value;
+    }
+
+    /**
+     * Gets the value of the kalibrCount property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getKalibrCount() {
+        return kalibrCount;
+    }
+
+    /**
+     * Sets the value of the kalibrCount property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setKalibrCount(String value) {
+        this.kalibrCount = value;
+    }
+
+    /**
      * Gets the value of the lastname property.
      * 
      * @return
@@ -415,6 +661,30 @@ public class CitizenGunOwnerDetailData {
      */
     public void setOwnerType(String value) {
         this.ownerType = value;
+    }
+
+    /**
+     * Gets the value of the phoneNumber property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getPhoneNumber() {
+        return phoneNumber;
+    }
+
+    /**
+     * Sets the value of the phoneNumber property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setPhoneNumber(String value) {
+        this.phoneNumber = value;
     }
 
     /**

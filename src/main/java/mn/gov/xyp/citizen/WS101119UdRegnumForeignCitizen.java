@@ -1,9 +1,9 @@
 
 package mn.gov.xyp.citizen;
 
-import jakarta.xml.bind.annotation.XmlAccessType;
-import jakarta.xml.bind.annotation.XmlAccessorType;
-import jakarta.xml.bind.annotation.XmlType;
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlType;
 
 
 /**
@@ -12,15 +12,15 @@ import jakarta.xml.bind.annotation.XmlType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="WS101119_udRegnumForeignCitizen">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="request" type="{http://citizen.xyp.gov.mn/}serviceCitizenBorderPassRequestData" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="WS101119_udRegnumForeignCitizen"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="request" type="{http://citizen.xyp.gov.mn/}udRegnumForeignCitizenInfoRequest" minOccurs="0"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -31,17 +31,17 @@ import jakarta.xml.bind.annotation.XmlType;
 })
 public class WS101119UdRegnumForeignCitizen {
 
-    protected ServiceCitizenBorderPassRequestData request;
+    protected UdRegnumForeignCitizenInfoRequest request;
 
     /**
      * Gets the value of the request property.
      * 
      * @return
      *     possible object is
-     *     {@link ServiceCitizenBorderPassRequestData }
+     *     {@link UdRegnumForeignCitizenInfoRequest }
      *     
      */
-    public ServiceCitizenBorderPassRequestData getRequest() {
+    public UdRegnumForeignCitizenInfoRequest getRequest() {
         return request;
     }
 
@@ -50,10 +50,10 @@ public class WS101119UdRegnumForeignCitizen {
      * 
      * @param value
      *     allowed object is
-     *     {@link ServiceCitizenBorderPassRequestData }
+     *     {@link UdRegnumForeignCitizenInfoRequest }
      *     
      */
-    public void setRequest(ServiceCitizenBorderPassRequestData value) {
+    public void setRequest(UdRegnumForeignCitizenInfoRequest value) {
         this.request = value;
     }
 
