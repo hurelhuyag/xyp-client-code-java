@@ -81,7 +81,7 @@
                                 <wsdlUrl>https://xyp.gov.mn/insurance-1.5.0/ws?WSDL</wsdlUrl>
                             </wsdlUrls>
                             <packageName>mn.gov.xyp</packageName>
-                            <sourceDestDir>${project.build.directory}/generated-sources/wsimport</sourceDestDir>
+                            <sourceDestDir>${project.basedir}/src/main/java/mn/gov/xyp</sourceDestDir>
                             <verbose>true</verbose>
                         </configuration>
                     </execution>
