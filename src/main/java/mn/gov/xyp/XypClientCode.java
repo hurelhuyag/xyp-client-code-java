@@ -4,10 +4,13 @@ import mn.gov.xyp.citizen.*;
 
 import jakarta.xml.ws.BindingProvider;
 import jakarta.xml.ws.handler.MessageContext;
+
+import java.net.URL;
 import java.util.*;
 
 public class XypClientCode {
-    static String wsdl = "https://xyp.gov.mn/citizen-1.5.0/ws?WSDL";
+//    static String wsdl = "https://xyp.gov.mn/citizen-1.5.0/ws?WSDL";
+    static String wsdl = "http://localhost:8002/citizen?wsdl";
 
     /**
      * ХУР системээс WS100101_getCitizenIDCardInfo сервисийг Иргэнийг тоон гарын үсгээр баталгаажуулан, үйлчилгээний ажилтны баталгаажуулалтгүй дуудах код
@@ -68,7 +71,7 @@ public class XypClientCode {
      * @author unenbat
      * @since 2023-05-19
      */
-    public void callUseOTP(String timestamp, String regnum) {
+    public void callUseOTP(String timestamp, String regnum) throws Exception{
         int otpCode;
         Scanner sc= new Scanner(System.in);
         System.out.print("Иргэнд ирсэн OTP кодыг оруулна уу: ");
@@ -80,7 +83,7 @@ public class XypClientCode {
             return;
         }
 
-        CitizenService citizenService = new CitizenServiceService().getCitizenServicePort();
+        CitizenService citizenService = new CitizenServiceService(new URL(wsdl)).getCitizenServicePort();
         Map<String, Object> req_ctx = ((BindingProvider)citizenService).getRequestContext();
         req_ctx.put(BindingProvider.ENDPOINT_ADDRESS_PROPERTY, wsdl);
         Map<String, List<String>> headers = new HashMap<>();

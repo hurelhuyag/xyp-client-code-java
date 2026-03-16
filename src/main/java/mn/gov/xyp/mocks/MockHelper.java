@@ -10,7 +10,6 @@ import java.security.PublicKey;
 import java.security.Signature;
 import java.security.spec.X509EncodedKeySpec;
 import java.util.Base64;
-import java.util.GregorianCalendar;
 import java.util.List;
 import java.util.Map;
 
@@ -18,15 +17,19 @@ public class MockHelper {
 
     // Load server public key (used to verify signatures)
     public static PublicKey getPublicKey() {
-        try {
-            byte[] keyBytes = java.nio.file.Files.readAllBytes(java.nio.file.Paths.get("xyp-public.pem"));
-            String keyStr = new String(keyBytes)
+        var publicKeyName = "sit.pub";
+        try(var keyStream = Thread.currentThread().getContextClassLoader().getResourceAsStream(publicKeyName)) {
+            if (keyStream == null) {
+                throw new RuntimeException("Unable to load public key " + publicKeyName);
+            }
+            var keyBytes = keyStream.readAllBytes();
+            var keyStr = new String(keyBytes)
                     .replace("-----BEGIN PUBLIC KEY-----", "")
                     .replace("-----END PUBLIC KEY-----", "")
                     .replaceAll("\\s+", "");
-            byte[] decoded = Base64.getDecoder().decode(keyStr);
-            X509EncodedKeySpec spec = new X509EncodedKeySpec(decoded);
-            KeyFactory kf = KeyFactory.getInstance("RSA");
+            var decoded = Base64.getDecoder().decode(keyStr);
+            var spec = new X509EncodedKeySpec(decoded);
+            var kf = KeyFactory.getInstance("RSA");
             return kf.generatePublic(spec);
         } catch (Exception e) {
             throw new RuntimeException("Failed to load public key", e);

@@ -1,7 +1,5 @@
 package mn.gov.xyp;
 
-import java.nio.file.Files;
-import java.nio.file.Paths;
 import java.security.*;
 import java.security.spec.PKCS8EncodedKeySpec;
 import java.util.Base64;
@@ -23,8 +21,8 @@ public class XypSign {
     }
 
     public Hashtable<String, String> Generate(String accessToken, String timestamp) {
-        try {
-            byte[] privateKeyBytes = Files.readAllBytes(Paths.get(Constants.KEY_PATH));
+        try(var keyStream = Thread.currentThread().getContextClassLoader().getResourceAsStream("sit.key")) {
+            byte[] privateKeyBytes = keyStream.readAllBytes();
             String privateKeyString = new String(privateKeyBytes);
             privateKeyString = privateKeyString
                     .replace(System.getProperty("line.separator"), "")

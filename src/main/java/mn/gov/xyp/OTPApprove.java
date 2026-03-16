@@ -14,6 +14,7 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.net.URL;
 import java.security.KeyManagementException;
 import java.security.KeyStore;
 import java.security.KeyStoreException;
@@ -28,13 +29,14 @@ import java.util.*;
  * @since 2023-05-19
  */
 public class OTPApprove {
-    static String wsdl = "https://xyp.gov.mn/meta-1.5.0/ws?WSDL";
+//    static String wsdl = "https://xyp.gov.mn/meta-1.5.0/ws?WSDL";
+    static String wsdl = "http://localhost:8001/meta?wsdl";
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
 
         String timestamp = GetCurrentTimestamp();
 
-        MetaService metaService = new MetaServiceService().getMetaServicePort();
+        MetaService metaService = new MetaServiceService(new URL(wsdl)).getMetaServicePort();
         Map<String, Object> req_ctx = ((BindingProvider) metaService).getRequestContext();
         req_ctx.put(BindingProvider.ENDPOINT_ADDRESS_PROPERTY, wsdl);
         Map<String, List<String>> headers = new HashMap<>();
@@ -70,16 +72,16 @@ public class OTPApprove {
 
         mn.gov.xyp.meta.ServiceResponse serviceResponse = metaService.ws100008RegisterOTPRequest(requestData);
 
-        System.out.println(serviceResponse.getResultCode());
-        System.out.println(serviceResponse.getResultMessage());
-        System.out.println(serviceResponse.getRequestId());
-        System.out.println(serviceResponse.getResponse());
+        System.out.println("ResultCode   : " + serviceResponse.getResultCode());
+        System.out.println("ResultMessage: " + serviceResponse.getResultMessage());
+        System.out.println("RequestId    : " + serviceResponse.getRequestId());
+        System.out.println("Response     : " + serviceResponse.getResponse());
 
-        //OTP илгээх сервис амжилттай болсон
+        /*//OTP илгээх сервис амжилттай болсон
         if(serviceResponse.getResultCode() == 0) {
             XypClientCode clientCode = new XypClientCode();
             clientCode.callUseOTP(timestamp, Constants.REGNUM);
-        }
+        }*/
     }
 
     /**
