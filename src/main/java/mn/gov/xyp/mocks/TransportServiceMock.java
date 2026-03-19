@@ -5,11 +5,6 @@ import jakarta.jws.WebService;
 import jakarta.xml.ws.WebServiceContext;
 import mn.gov.xyp.transport.*;
 
-import javax.xml.datatype.DatatypeFactory;
-import javax.xml.datatype.XMLGregorianCalendar;
-import java.util.ArrayList;
-import java.util.List;
-
 @WebService(
     serviceName = "TransportServiceService",
     portName = "TransportServicePort",
@@ -433,7 +428,67 @@ public class TransportServiceMock implements TransportService {
 
     @Override
     public ServiceResponse ws100401GetVehicleInfo(VehicleRequestData request) {
-        throw new UnsupportedOperationException("not supported");
+        var error = MockHelper.verifyRequest(context);
+        if (error != null) {
+            var r = new ServiceResponse();
+            r.setRequest(request);
+            r.setRequestId("1");
+            r.setResultCode(606);
+            r.setResultMessage(error);
+            return r;
+        }
+
+        var v = new VehicleData();
+        v.setArchiveFirstNumber("АБВГД12345678");
+        v.setArchiveNumber("АВБГД12345678");
+        v.setAxleCount(0);
+        v.setBuildYear(2017);
+        v.setCabinNumber("ZVW301234567");
+        v.setCapacity(1797.0f);
+        v.setCertificateNumber("АА1234567");
+        v.setClassName("B");
+        v.setColorName("Сувдан цагаан");
+        v.setCountryName("Япон");
+        v.setDeclarationNum(null);
+        v.setFueltype("Бензин - Цахилгаан");
+        v.setHeight(1490.0f);
+        var holderAddress = new AddressData();
+        holderAddress.setApartment(null);
+        holderAddress.setDoor(null);
+        holderAddress.setSoum("Сүхбаатар");
+        holderAddress.setState("Улаанбаатар");
+        holderAddress.setStreet(null);
+        holderAddress.setTown(null);
+        v.setImportDate(MockHelper.generateDate(2017, 4, 4));
+        v.setIntent(null);
+        v.setLength(4480.0f);
+        v.setManCount(5);
+        v.setMarkName("Toyota");
+        v.setMass(1350.0f);
+        v.setModelName("Prius");
+        //v.setModificaceName("XW30");
+        v.setMotorNumber(null);
+        v.setOwnerCountry(null);
+        v.setOwnerRegnum(null);
+        v.setPlateNumber("0001УАА");
+        v.setPurposeId(1);
+        //v.setPurposeName("Суудал");
+        v.setStartDate(MockHelper.generateDate(2017, 6, 17));
+        v.setTransmission(null);
+        v.setType("Олон зориулалттай");
+        v.setTypeId(0);
+        //v.setVehicleId("123456");
+        v.setWeight(0.0f);
+        v.setWheelPosition("Баруун");
+        v.setWidth(1745.0f);
+
+        var r = new ServiceResponse();
+        r.setRequest(request);
+        r.setRequestId("1");
+        r.setResultCode(0);
+        r.setResultMessage("OK");
+        r.setResponse(v);
+        return r;
     }
 
     @Override
